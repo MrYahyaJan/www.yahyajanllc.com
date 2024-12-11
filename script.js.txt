@@ -1,0 +1,15 @@
+// Basic AI-like chatbot interaction
+function getChatResponse() {
+  let userQuestion = document.getElementById("userInput").value;
+  let response = "I'm not sure, but I'm here to help!";
+  
+  if (userQuestion.includes("money")) {
+    response = "Great question! To make money online, start by learning digital skills like freelancing, online tutoring, or affiliate marketing.";
+  } else if (userQuestion.includes("budget")) {
+    response = "You can start budgeting by listing your income and expenses, then setting aside a portion for savings each month!";
+  } else if (userQuestion.includes("course")) {
+    response = "I offer a 'Smart Money Skills for Beginners' course. It's designed to help you get started with managing money effectively.";
+  }
+
+  document.getElementById("chatResponse").innerHTML = "<p>" + response + "</p>";
+}
